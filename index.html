@@ -42,7 +42,10 @@
                         <svg class="header-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.7188C6.18594 19.7188 2.28125 15.8141 2.28125 11C2.28125 6.18594 6.18594 2.28125 11 2.28125C15.8141 2.28125 19.7188 6.18594 19.7188 11C19.7188 15.8141 15.8141 19.7188 11 19.7188Z" />
                             <path d="M9.875 6.875C9.875 7.17337 9.99353 7.45952 10.2045 7.6705C10.4155 7.88147 10.7016 8 11 8C11.2984 8 11.5845 7.88147 11.7955 7.6705C12.0065 7.45952 12.125 7.17337 12.125 6.875C12.125 6.57663 12.0065 6.29048 11.7955 6.0795C11.5845 5.86853 11.2984 5.75 11 5.75C10.7016 5.75 10.4155 5.86853 10.2045 6.0795C9.99353 6.29048 9.875 6.57663 9.875 6.875ZM11.5625 9.5H10.4375C10.3344 9.5 10.25 9.58437 10.25 9.6875V16.0625C10.25 16.1656 10.3344 16.25 10.4375 16.25H11.5625C11.6656 16.25 11.75 16.1656 11.75 16.0625V9.6875C11.75 9.58437 11.6656 9.5 11.5625 9.5Z" />
-                        </svg>                            
+                        </svg>
+                        <svg class="header-icon-dropdown" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1308 0.6875H0.868303C0.56049 0.6875 0.388615 1.0125 0.57924 1.23437L5.71049 7.18437C5.85736 7.35469 6.14018 7.35469 6.28861 7.18437L11.4199 1.23437C11.6105 1.0125 11.4386 0.6875 11.1308 0.6875Z" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -164,7 +167,7 @@
                 <!-- /.header -->
                 <div class="create-post-body">
                     <img src="img/avatar.png" alt="avatar" class="user-avatar" />
-                    <div class="create-post-input" contenteditable="true">What’s on your mind, Mateusz?</div>
+                    <div class="create-post-input" contenteditable="true" role="textbox" aria-multiline="true">What’s on your mind, Mateusz?</div>
                 </div>
                 <!-- /.body -->
                 <div class="create-post-footer">
@@ -201,8 +204,155 @@
                 <!-- /.footer -->
             </div>
             <!-- /.create-post -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img class="user-avatar" src="img/avatar.png" alt="avatar"></img>
+                        <div class="post-info">
+                            <a href="#" class="post-author">Ruslan Bogdanov</a>
+                            <div class="post-info-time">
+                                <span class="post-time">1 chr</span>
+                                <svg width="14px" height="14px" class="setting-icon">
+                                    <use xlink:href="img/icons.svg#setting"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="post-header-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#dots"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- /.post-header -->
+                <div class="post-content">
+                    <p class="post-text">
+                        Did you know that all of this was made using only components and styles from Ant Desing System for Figma? <br><br> Learn more: <a href="https://antforfigma.com">https://antforfigma.com</a>
+                    </p>
+                    <img class="post-image" src="img/postimg.jpg" alt="post-img">
+                </div>
+                <!-- /.post-content -->
+                <div class="likes">
+                    <svg width="16px" height="16px" class="likes-icon">
+                        <use xlink:href="img/icons.svg#like-active"></use>
+                    </svg>
+                    <span class="likes-counter">23</span>
+                </div>
+                <!-- /.likes -->
+                <div class="post-footer">
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#like"></use>
+                        </svg>
+                        <span class="post-button-text">Like</span>
+                    </button>
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#message"></use>
+                        </svg>
+                        <span class="post-button-text">Comment</span>
+                    </button>
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#share"></use>
+                        </svg>
+                        <span class="post-button-text">Share</span>
+                    </button>
+                </div>
+                <!-- /.post-footer -->
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img class="user-avatar" src="img/d54d4d65g.png" alt="avatar"></img>
+                        <div class="post-info">
+                            <a href="#" class="post-author">Figma</a>
+                            <div class="post-info-time">
+                                <span class="post-time">6 chr</span>
+                                <svg width="14px" height="14px" class="setting-icon">
+                                    <use xlink:href="img/icons.svg#setting"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="post-header-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#dots"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- /.post-header -->
+                <div class="post-content">
+                    <p class="post-text">
+                        📙 Want to implement type in your design system in Figma? This guide covers everything you should consider, from choosing the right typography scale to naming and organizing your text styles.
+                    </p>
+                    <img class="post-image" src="img/postimg.jpg" alt="post-img">
+                </div>
+                <!-- /.post-content -->
+                <div class="likes">
+                    <svg width="16px" height="16px" class="likes-icon">
+                        <use xlink:href="img/icons.svg#like-active"></use>
+                    </svg>
+                    <span class="likes-counter">23</span>
+                </div>
+                <!-- /.likes -->
+                <div class="post-footer">
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#like"></use>
+                        </svg>
+                        <span class="post-button-text">Like</span>
+                    </button>
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#message"></use>
+                        </svg>
+                        <span class="post-button-text">Comment</span>
+                    </button>
+                    <button class="post-button">
+                        <svg width="24px" height="24px" class="post-button-icon">
+                            <use xlink:href="img/icons.svg#share"></use>
+                        </svg>
+                        <span class="post-button-text">Share</span>
+                    </button>
+                </div>
+                <!-- /.post-footer -->
+            </div>
+            <!-- /.post -->
         </div>
         <!-- /.main-feed -->
     </div>
+    <script>
+        function datetimepost(){
+            let postTime = document.querySelectorAll(".post-time");
+            let initData0 = new Date("December 16, 2020 8:30:00");
+            let initData1 = new Date("December 16, 2020 10:30:00");
+            let now = Date.now();
+            let deference0 = now - initData0;
+            let deference1 = now - initData1;
+            let mSPD = 60 * 60 * 1000; //вычисляет сколько м/с в часах
+            let hour0 = Math.floor(deference0/mSPD); //сколько прошло часов с заданной даты
+            let hour1 = Math.floor(deference1/mSPD);
+            
+            if (hour0 > 24) {
+                let dayRemainder0 = hour0 % 24;
+                let day0 = Math.floor(hour0 / 24);
+                postTime[1].innerHTML = day0 + " day " + dayRemainder0+ " chr";
+            } else {
+                postTime[1].innerHTML = hour0 + " chr";
+            }
+            //hour0
+            if (hour1 > 24) {
+                let dayRemainder1 = hour1 % 24;
+                let day1 = Math.floor(hour1 / 24);
+                postTime[0].innerHTML = day1 + " day " + dayRemainder1+ " chr";
+            } else {
+                postTime[0].innerHTML = hour1 + " chr";
+            }
+            //hour1
+            
+        }
+        datetimepost();
+    </script>
 </body>
 </html>
