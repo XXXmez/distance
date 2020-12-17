@@ -496,6 +496,23 @@ body {
     background-position: center;
     background-size: cover;
 }
+.happy-birthday {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.happy-box-icon {
+    padding: 18px;
+    box-sizing: content-box;
+}
+.happy-birthday-name {
+    font-size: 14px;
+    line-height: 22px;
+}
 @media (max-width: 1250px) {
     .right-sidebar {
         display: none;
@@ -522,6 +539,7 @@ body {
         left: 0;
         top: 25px;
         display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 250px;
         background-color: #f1f1f1;
