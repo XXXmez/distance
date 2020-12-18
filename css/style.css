@@ -234,6 +234,7 @@ body {
     margin: 0;
 }
 .create-post-body {
+    position: relative;
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
@@ -247,7 +248,18 @@ body {
     padding-left: 8px;
     font-size: 16px;
     line-height: 24px;
+    color: black;
+    z-index: 1;
+}
+.create-post-input-text {
+    position: absolute;
+    left: 65px;
+    top: 25px;
+    z-index: 0;
+    font-size: 16px;
+    line-height: 24px;
     color: #8C8C8C;
+    opacity: 0.5;
 }
 .create-post-footer {
     display: flex;
@@ -512,6 +524,100 @@ body {
 .happy-birthday-name {
     font-size: 14px;
     line-height: 22px;
+}
+.fanpage {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-top: 16px;
+}
+.fanpage-header {
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+}
+.fanpage-header-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #595959;
+}
+.fanpage-status {
+    border-bottom: 1px solid #D9D9D9;
+    margin: 16px;
+    padding: 0 0 23px 0;
+    display: flex;
+}
+.fanpage-status-info-message, .fanpage-status-info-notification {
+    display: flex;
+    align-items: center;
+}
+.info-message-text, .info-notification-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    padding-left: 4px;
+}
+.fanpage-button {
+    padding: 0 16px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fanpage-butn {
+    width: 109px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+.fanpage-butn:nth-child(1) {
+    border-radius: 5px 0px 0px 5px;
+}
+.fanpage-butn:nth-child(3) {
+    border-radius: 0px 5px 5px 0px;
+}
+.fanpage-butn.active {
+    border: 1px solid #1890FF;
+    color: #1890FF;
+}
+.fanpage-butn:hover {
+    border: 1px solid #1890FF;
+    color: #1890FF;
+}
+.fanpage-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.fanpage-like-all {
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626;
+}
+.fanpage-like-last {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+}
+.create-post-input, .tag, .search-input, .post-button {
+    outline: none;
+}
+.tag, .stories-image, .post-button, .fanpage-butn {
+    cursor: pointer;
 }
 @media (max-width: 1250px) {
     .right-sidebar {
